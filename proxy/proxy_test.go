@@ -83,7 +83,7 @@ var code string = `
 func TestProxy(t *testing.T) {
 	relay, err := proxy.NewAuthProxyRelay(
 		":8081",
-		"http://brd-customer-hl_67f64aad-zone-mobile_proxy1:5w9mpdztf6cx@brd.superproxy.io:33335", // 사내 인증 프록시
+		"", // 사내 인증 프록시
 	)
 	if err != nil {
 		log.Fatal(err)
